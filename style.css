@@ -573,6 +573,12 @@ body {
   margin: 0 auto;
 }
 
+.apply-note {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
 .apply-email-link {
   display: inline-block;
   background: var(--primary);
