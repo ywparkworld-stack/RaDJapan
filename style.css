@@ -497,6 +497,77 @@ body {
   display: none;
 }
 
+/* ========== RECRUIT ========== */
+.recruit {
+  padding: 100px 0;
+  background: var(--bg-alt);
+}
+
+.recruit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recruit-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  box-shadow: var(--shadow);
+}
+
+.recruit-role {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: -0.03em;
+  margin-bottom: 4px;
+}
+
+.recruit-count {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #e91e8c;
+  background: rgba(233,30,140,0.08);
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.recruit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recruit-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.recruit-table tr:last-child {
+  border-bottom: none;
+}
+
+.recruit-table th {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 12px 0;
+  width: 50%;
+  white-space: nowrap;
+}
+
+.recruit-table td {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 0;
+  color: var(--text);
+}
+
 /* ========== FOOTER ========== */
 .footer {
   background: var(--text);
