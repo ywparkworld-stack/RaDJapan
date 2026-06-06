@@ -14,8 +14,8 @@
       <a href="#" class="logo">RaD Japan</a>
       <ul class="nav-links">
         <li><a href="#services">サービス</a></li>
-        <li><a href="#about">会社概要</a></li>
         <li><a href="#recruit">採用</a></li>
+        <li><a href="#about">会社概要</a></li>
         <li><a href="#contact" class="btn-nav">お問い合わせ</a></li>
       </ul>
       <button class="hamburger" aria-label="メニュー">
@@ -71,43 +71,6 @@
           <p>企業の空きスペースを、空いている時間帯に即日借りられる・即日貸し出せる仕組み。</p>
           <span class="service-link-label">詳しく見る →</span>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 会社概要 -->
-  <section class="about" id="about">
-    <div class="container about-inner">
-      <div class="about-text">
-        <div class="section-header left">
-          <p class="section-label">ABOUT US</p>
-          <h2>会社概要</h2>
-          <p class="section-desc">RaD Japanは、「何か」と「何か」の間に橋をかける仕組みをつくる会社です。繋がることで、新しい価値が生まれる。</p>
-        </div>
-        <table class="about-table">
-          <tbody>
-            <tr>
-              <th>会社名</th>
-              <td>RaD Japan 株式会社</td>
-            </tr>
-            <tr>
-              <th>設立</th>
-              <td>2020年4月</td>
-            </tr>
-            <tr>
-              <th>所在地</th>
-              <td>東京都渋谷区</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>研究開発・ソフトウェア開発・AIソリューション・技術コンサルティング</td>
-            </tr>
-            <tr>
-              <th>理念</th>
-              <td>「何か」と「何か」を繋ぎ、新しい価値を生む。</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </div>
   </section>
@@ -185,6 +148,79 @@
           </table>
         </div>
 
+      </div>
+
+      <!-- 応募フォーム -->
+      <div class="apply-wrap" id="apply">
+        <div class="section-header" style="margin-top: 72px;">
+          <p class="section-label">APPLY</p>
+          <h2>応募する</h2>
+          <p class="section-desc">ご興味をお持ちの方は、ポジションを選択の上ご応募ください。</p>
+        </div>
+        <form class="contact-form" id="applyForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="apply-name">お名前 <span>*</span></label>
+              <input type="text" id="apply-name" name="name" placeholder="山田 太郎" required>
+            </div>
+            <div class="form-group">
+              <label for="apply-email">メールアドレス <span>*</span></label>
+              <input type="email" id="apply-email" name="email" placeholder="example@company.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="apply-position">希望ポジション <span>*</span></label>
+            <select id="apply-position" name="position" required>
+              <option value="" disabled selected>選択してください</option>
+              <option value="CTO">CTO</option>
+              <option value="CFO">CFO</option>
+              <option value="CLO">CLO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="apply-message">自己紹介・意気込み <span>*</span></label>
+            <textarea id="apply-message" name="message" rows="5" placeholder="これまでの経験や、RaD Japanに参加したい理由をご記入ください。" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">応募する</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 会社概要 -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <div class="section-header left">
+          <p class="section-label">ABOUT US</p>
+          <h2>会社概要</h2>
+          <p class="section-desc">RaD Japanは、「何か」と「何か」の間に橋をかける仕組みをつくる会社です。繋がることで、新しい価値が生まれる。</p>
+        </div>
+        <table class="about-table">
+          <tbody>
+            <tr>
+              <th>会社名</th>
+              <td>RaD Japan 株式会社</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2020年4月</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>東京都渋谷区</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>研究開発・ソフトウェア開発・AIソリューション・技術コンサルティング</td>
+            </tr>
+            <tr>
+              <th>理念</th>
+              <td>「何か」と「何か」を繋ぎ、新しい価値を生む。</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>

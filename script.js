@@ -50,9 +50,15 @@ if (aboutSection) {
   observer.observe(aboutSection);
 }
 
-// フォーム送信（デモ）
+// お問い合わせフォーム送信（デモ）
 document.getElementById('contactForm')?.addEventListener('submit', e => {
   e.preventDefault();
-  const form = e.target;
-  form.innerHTML = '<p class="form-success" style="display:block">お問い合わせありがとうございます。<br>内容を確認次第、担当者よりご連絡いたします。</p>';
+  e.target.innerHTML = '<p class="form-success" style="display:block">お問い合わせありがとうございます。<br>内容を確認次第、担当者よりご連絡いたします。</p>';
+});
+
+// 応募フォーム送信（デモ）
+document.getElementById('applyForm')?.addEventListener('submit', e => {
+  e.preventDefault();
+  const position = document.getElementById('apply-position').value;
+  e.target.innerHTML = `<p class="form-success" style="display:block">【${position}】へのご応募ありがとうございます。<br>内容を確認次第、担当者よりご連絡いたします。</p>`;
 });
