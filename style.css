@@ -568,6 +568,28 @@ body {
   color: var(--text);
 }
 
+.apply-email-box {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.apply-email-link {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.apply-email-link:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
 /* ========== FOOTER ========== */
 .footer {
   background: var(--text);

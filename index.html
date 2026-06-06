@@ -150,41 +150,16 @@
 
       </div>
 
-      <!-- 応募フォーム -->
+      <!-- 応募 -->
       <div class="apply-wrap" id="apply">
         <div class="section-header" style="margin-top: 72px;">
           <p class="section-label">APPLY</p>
           <h2>応募する</h2>
-          <p class="section-desc">ご興味をお持ちの方は、ポジションを選択の上ご応募ください。</p>
+          <p class="section-desc">ご興味をお持ちの方は、下記アドレスまでご連絡ください。</p>
         </div>
-        <form class="contact-form" id="applyForm" action="https://formspree.io/f/yw.park.space@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="【RaD Japan】採用応募">
-          <input type="hidden" name="_next" value="">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="apply-name">お名前 <span>*</span></label>
-              <input type="text" id="apply-name" name="name" placeholder="山田 太郎" required>
-            </div>
-            <div class="form-group">
-              <label for="apply-email">メールアドレス <span>*</span></label>
-              <input type="email" id="apply-email" name="email" placeholder="example@company.com" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="apply-position">希望ポジション <span>*</span></label>
-            <select id="apply-position" name="position" required>
-              <option value="" disabled selected>選択してください</option>
-              <option value="CTO">CTO</option>
-              <option value="CFO">CFO</option>
-              <option value="CLO">CLO</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="apply-message">自己紹介・意気込み <span>*</span></label>
-            <textarea id="apply-message" name="message" rows="5" placeholder="これまでの経験や、RaD Japanに参加したい理由をご記入ください。" required></textarea>
-          </div>
-          <button type="submit" class="btn-primary">応募する</button>
-        </form>
+        <div class="apply-email-box">
+          <a href="mailto:yw.park.space@gmail.com" class="apply-email-link">yw.park.space@gmail.com へ送信</a>
+        </div>
       </div>
 
     </div>
