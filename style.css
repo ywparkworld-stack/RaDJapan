@@ -274,6 +274,12 @@ body {
   gap: 24px;
 }
 
+.services-grid--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .service-card {
   background: var(--bg-alt);
   border: 1px solid var(--border);
@@ -282,9 +288,37 @@ body {
   transition: box-shadow 0.25s, transform 0.25s;
 }
 
+.service-card--link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.service-card--link:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+  border-color: var(--primary);
+}
+
+.service-link-label {
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
 .service-card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+  .services-grid--two {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-icon {
