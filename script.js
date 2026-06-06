@@ -56,9 +56,32 @@ document.getElementById('contactForm')?.addEventListener('submit', e => {
   e.target.innerHTML = '<p class="form-success" style="display:block">お問い合わせありがとうございます。<br>内容を確認次第、担当者よりご連絡いたします。</p>';
 });
 
-// 応募フォーム送信（デモ）
-document.getElementById('applyForm')?.addEventListener('submit', e => {
+// 応募フォーム送信 → Formspree 経由でメール転送
+document.getElementById('applyForm')?.addEventListener('submit', async e => {
   e.preventDefault();
+  const form = e.target;
   const position = document.getElementById('apply-position').value;
-  e.target.innerHTML = `<p class="form-success" style="display:block">【${position}】へのご応募ありがとうございます。<br>内容を確認次第、担当者よりご連絡いたします。</p>`;
+  const btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = '送信中...';
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    });
+
+    if (res.ok) {
+      form.innerHTML = `<p class="form-success" style="display:block">【${position}】へのご応募ありがとうございます。<br>内容を確認次第、担当者よりご連絡いたします。</p>`;
+    } else {
+      btn.disabled = false;
+      btn.textContent = '応募する';
+      alert('送信に失敗しました。しばらくしてから再度お試しください。');
+    }
+  } catch {
+    btn.disabled = false;
+    btn.textContent = '応募する';
+    alert('通信エラーが発生しました。');
+  }
 });
