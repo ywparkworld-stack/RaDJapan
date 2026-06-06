@@ -45,7 +45,7 @@ body {
 .logo {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #e91e8c;
   text-decoration: none;
   letter-spacing: -0.03em;
 }
@@ -481,7 +481,7 @@ body {
 .footer-logo {
   font-size: 1.1rem;
   font-weight: 800;
-  color: #fff;
+  color: #f472b6;
   letter-spacing: -0.03em;
 }
 
