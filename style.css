@@ -35,7 +35,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 72px;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +48,7 @@ body {
 }
 
 .logo-img {
-  height: 52px;
+  height: 140px;
   width: auto;
   display: block;
 }
@@ -98,7 +98,7 @@ body {
 
 /* ========== PAGE HERO ========== */
 .page-hero {
-  padding: 120px 0 56px;
+  padding: 200px 0 56px;
   background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 60%, #f0fdf4 100%);
   border-bottom: 1px solid var(--border);
 }
@@ -683,7 +683,7 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 72px; left: 0; right: 0;
+    top: 160px; left: 0; right: 0;
     background: #fff;
     border-bottom: 1px solid var(--border);
     padding: 24px;
