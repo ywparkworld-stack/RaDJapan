@@ -35,7 +35,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 64px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +48,7 @@ body {
 }
 
 .logo-img {
-  height: 40px;
+  height: 52px;
   width: auto;
   display: block;
 }
@@ -582,48 +582,95 @@ body {
 .footer {
   background: var(--text);
   color: rgba(255,255,255,0.6);
-  padding: 32px 0;
+  padding: 56px 0 32px;
 }
 
-.footer-inner {
+.footer-top {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 64px;
+  align-items: flex-start;
+  margin-bottom: 48px;
   flex-wrap: wrap;
-  gap: 12px;
 }
 
 .footer-logo {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #f472b6;
   letter-spacing: -0.03em;
+  flex-shrink: 0;
 }
 
-.footer-copy { font-size: 0.8rem; }
+.footer-nav {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.footer-nav-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.footer-nav-head {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.35);
+}
+
+.footer-nav-col a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer-nav-col a:hover { color: #fff; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+}
 
 /* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
+/* ハンバーガーは常時表示、PCではnav-linksを出す */
+@media (min-width: 769px) {
+  .nav-links { display: flex !important; }
+  .hamburger { display: none; }
+}
 
-  .nav-links.open {
-    display: flex;
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 64px; left: 0; right: 0;
+    top: 72px; left: 0; right: 0;
     background: #fff;
     border-bottom: 1px solid var(--border);
-    padding: 20px 24px;
-    gap: 16px;
+    padding: 24px;
+    gap: 20px;
+    z-index: 99;
+    box-shadow: 0 8px 24px rgba(15,23,42,0.1);
+  }
+
+  .nav-links.open { display: flex !important; }
+
+  .nav-links a {
+    font-size: 1rem;
+    color: var(--text);
   }
 
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .message-box { padding: 28px 20px; }
-
-  .services-grid--two {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-inner { flex-direction: column; text-align: center; }
+  .services-grid--two { grid-template-columns: 1fr; }
+  .footer-top { flex-direction: column; gap: 32px; }
+  .footer-nav { gap: 32px; }
 }
