@@ -42,11 +42,15 @@ body {
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #e91e8c;
   text-decoration: none;
-  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -114,16 +118,19 @@ body {
   letter-spacing: 0.12em;
   padding: 6px 16px;
   border-radius: 999px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
-.hero-title {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
+.hero-kanji {
+  font-family: 'Kaisei HarunoUmi', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: clamp(7rem, 18vw, 14rem);
+  font-weight: 700;
+  line-height: 1;
   color: var(--text);
-  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  position: relative;
+  display: inline-block;
 }
 
 .hero-sub {
