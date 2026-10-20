@@ -48,9 +48,11 @@ body {
 }
 
 .logo-img {
-  height: 68px;
+  height: 136px;
   width: auto;
   display: block;
+  position: relative;
+  z-index: 101;
 }
 
 .nav-links {
