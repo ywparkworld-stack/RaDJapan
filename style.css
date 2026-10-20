@@ -34,21 +34,11 @@ body {
 .nav {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 24px 0;
-  min-height: 200px;
+  padding: 0 24px;
+  height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.nav > .logo {
-  margin-bottom: auto;
-}
-
-.nav > .nav-links,
-.nav > .hamburger {
-  align-self: flex-end;
-  margin-bottom: 12px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -58,7 +48,7 @@ body {
 }
 
 .logo-img {
-  height: 160px;
+  height: 68px;
   width: auto;
   display: block;
 }
@@ -109,7 +99,7 @@ body {
 
 /* ========== PAGE HERO ========== */
 .page-hero {
-  padding: 220px 0 56px;
+  padding: 120px 0 56px;
   background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 60%, #f0fdf4 100%);
   border-bottom: 1px solid var(--border);
 }
@@ -139,7 +129,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 220px 24px 80px;
+  padding: 120px 24px 80px;
   overflow: hidden;
   background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 50%, #f0fdf4 100%);
 }
@@ -694,7 +684,7 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 200px; left: 0; right: 0;
+    top: 80px; left: 0; right: 0;
     background: #fff;
     border-bottom: 1px solid var(--border);
     padding: 24px;
