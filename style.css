@@ -90,6 +90,38 @@ body {
   transition: 0.3s;
 }
 
+/* ========== NAV ACTIVE ========== */
+.nav-active {
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+}
+
+/* ========== PAGE HERO ========== */
+.page-hero {
+  padding: 120px 0 56px;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 60%, #f0fdf4 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.page-hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.page-main {
+  padding: 80px 0 100px;
+}
+
 /* ========== HERO ========== */
 .hero {
   position: relative;

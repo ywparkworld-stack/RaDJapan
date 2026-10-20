@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | RaDJapan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo"><img src="logo.png" alt="RaDJapan" class="logo-img"></a>
+      <ul class="nav-links">
+        <li><a href="company.html">企業情報</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" class="nav-active">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-hero-label">CONTACT</p>
+      <h1 class="page-hero-title">お問い合わせ</h1>
+    </div>
+  </div>
+
+  <main class="contact page-main">
+    <div class="container contact-inner">
+      <div class="section-header">
+        <p class="section-desc">お客様の種別を選択してください。</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-card" id="contact-corporate">
+          <div class="contact-card-label">法人のお客様</div>
+          <p class="contact-card-desc">サービス導入・提携・その他法人としてのお問い合わせはこちら。</p>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-name">会社名 <span>*</span></label>
+                <input type="text" id="c-name" name="company" placeholder="株式会社〇〇" required>
+              </div>
+              <div class="form-group">
+                <label for="c-email">メールアドレス <span>*</span></label>
+                <input type="email" id="c-email" name="email" placeholder="example@company.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-message">お問い合わせ内容 <span>*</span></label>
+              <textarea id="c-message" name="message" rows="4" placeholder="お問い合わせ内容をご記入ください。" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">送信する</button>
+          </form>
+        </div>
+
+        <div class="contact-card contact-card--individual" id="contact-individual">
+          <div class="contact-card-label">個人のお客様</div>
+          <p class="contact-card-desc">個人としてのサービス利用・お問い合わせはthippoページよりご連絡ください。</p>
+          <a href="https://lin.ee/WWwVxhB" target="_blank" rel="noopener noreferrer" class="btn-primary contact-individual-btn">thippoへ →</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <p class="footer-logo">RaDJapan</p>
+        <nav class="footer-nav">
+          <div class="footer-nav-col">
+            <p class="footer-nav-head">企業情報</p>
+            <ul>
+              <li><a href="company.html#company">企業概要</a></li>
+              <li><a href="company.html#philosophy">基本理念</a></li>
+              <li><a href="company.html#message">トップメッセージ</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <p class="footer-nav-head">サービス・情報</p>
+            <ul>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <p class="footer-nav-head">お問い合わせ</p>
+            <ul>
+              <li><a href="contact.html#contact-corporate">法人のお客様</a></li>
+              <li><a href="contact.html#contact-individual">個人のお客様</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 RaDJapan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
